@@ -1,0 +1,164 @@
+
+.header{
+	background-color: #121212;
+	&__container{
+		z-index: 1;
+		background: url(../images/LogoBlack.svg) 20px 50% no-repeat;
+		height: 56px;
+	}
+	&__left{	
+		display: none;
+		height: 100%;
+		width: 50%;
+	}
+	&__select{
+		z-index: 10;
+		display: inline;
+	}
+	&__select-body{
+			left: -5px;		
+	}
+	&__social{
+		display: inline-block;
+	}
+	&__right{
+		position: relative;
+		display: inline;
+		line-height: 56px;
+		float: right;	
+		height: 100%;
+	}
+	&__call{	
+		width: 24px;
+		height: 24px;
+		vertical-align: middle;
+		margin-right: 6px;
+	}
+	&__title{
+		display: none;
+	}
+	&__gradient-line{
+		margin-top: 12px;
+	}
+	&__hamburger{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__button{
+		background-color: #121212;
+		display: none;
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	&__phone{
+		display: none;
+		font-size: 12px;
+		line-height: 16px;
+		color: #E0E0E0;
+	}
+	&__link{
+		margin-right: 8px;
+	}
+	&__menu{
+		z-index: 3;
+		font-family: GothamPro;
+		color: #BDBDBD;
+		padding-top: 24px;
+		padding-left: 20px;
+		padding-bottom: 40px;
+		background-color: #121212;		
+		width: 320px;	
+		position: fixed;
+		visibility: hidden;
+		right: -100%;
+		transition: 0.8s;
+		&--active{			
+			visibility: visible;
+			right: 0;
+		}
+	}
+
+	&__nav{
+		margin-bottom: 24px;
+	}
+
+	&__tabs{
+		margin-bottom: 24px;
+	}
+}
+
+@media (min-width:$sizeTablet) {
+	.header{
+		&__container{
+			background-position: center;
+		}
+		&__left{
+			display: inline;
+			float: left;
+		}
+		&__call{
+			display: none;
+		}
+		&__button{
+			margin-right: 20px;
+			&--table{
+				display: inline;
+			}
+		}
+		&__menu{
+			padding-left: 40px;
+			padding-bottom: 24px;
+			width: 100%;
+			right: 0;
+			top: -100%;
+			&--active{
+				visibility: visible;
+				top: 51px;
+			}
+		}
+	}	
+	.tabs{
+		display: none;
+	}	
+}
+
+
+@media (min-width:$sizeDesktop) {
+	.header{
+		&__container{
+			height: 65px;
+		}
+		&__title{
+			display: block;		
+			text-align: center;	
+		}
+		&__button{
+			&:last-of-type{
+				margin-right: 0;
+			}
+			&--desktop{
+				display: inline;
+			}
+		}
+		&__phone{
+			display: inline;
+		}
+		&__menu{
+			position: static;
+			height: 174px;
+			visibility:visible;
+			padding-top: 16px;
+			padding-left: 96px;
+			padding-right: 96px;
+			margin-bottom: 0;
+		}
+	}	
+	.nav{
+		margin-top: 24px;
+	}
+}
+
+
+
+

@@ -1,0 +1,70 @@
+
+.apartaments{
+	padding-top: 48px;
+	&__container{
+		overflow-x: hidden;
+	}
+	&__title{
+		display: inline-block;
+		margin-bottom: 16px;
+	}
+	&__gradient-line{
+		margin-bottom: 32px;
+	}
+	&__list{
+		width: 2000px;
+		margin-bottom: 32px;
+	}
+	&__card-hotel{
+		margin-right: 16px;
+		display: inline-block;
+		width: 272px;
+	}
+	&__link{
+		width: 200px;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		border-bottom: 2px solid #c0bfbf;
+		margin-bottom: 80px;
+	}
+	&__button{
+		display: none;
+	}
+}	
+
+@media (min-width:$sizeTablet) {
+	.apartaments{
+		padding-top: 32px;
+		&__title{
+			margin-bottom: 24px;
+		}
+		&__gradient-line{
+			margin-bottom: 40px;
+		}
+		&__card-hotel{
+			width: 312px; 	
+			margin-right: 36px;	
+		}
+		&__link{
+			display: none;
+		}
+		&__list{
+			margin-bottom: 118px;
+		}
+		&__button{
+			display: block;
+			float: right;
+			bottom: -30px;;
+		}
+	}
+}
+
+@media (min-width:$sizeDesktop) {
+	.apartaments{
+		padding-top: 40px;
+		&__gradient-line{
+			margin-bottom: 48px;	
+		}
+	}
+}

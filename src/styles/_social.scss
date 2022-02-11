@@ -1,0 +1,16 @@
+.social{
+	&__icon{
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		margin-right: 6px;
+		opacity: 0.5;
+		vertical-align: middle;
+		&:hover{
+			opacity: 1;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

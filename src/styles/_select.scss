@@ -1,0 +1,48 @@
+.select{
+	position: relative;
+	color: #BDBDBD;
+	font-size: 12px;
+	line-height: 16px;
+	&__header{
+	  cursor: pointer;
+	  width: 51px;
+	  line-height: 56px;
+	  display: inline-block;
+	  &:hover{
+		color: #fff;
+	  }
+	}
+	&__icon{
+	  vertical-align: middle;
+	  width: 16px;
+	  height: 16px;
+	}
+	&__body{
+	  display: none;
+	  left: 0;
+	  right: 0;
+	  top: 100%;
+	  position: absolute;
+	  background: inherit;
+	  border: 1px solid #272727;  
+	  box-shadow: 0 0 0.83333rem hsl(0deg 0% 100% / 4%);
+	  padding: 8px;
+	  width: 51px;
+	  background-color: #121212;
+	  &_active{
+		top: -74%;
+		left: -9px;
+		display: block;
+	  }
+	}
+	&__item{
+	  cursor: pointer;
+	  margin-bottom: 12px;
+	  &:hover{
+		color: #fff;
+	  }
+	  &:last-child{
+		margin-bottom: 0;
+	  }
+	}
+  }

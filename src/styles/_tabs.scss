@@ -1,0 +1,25 @@
+.tabs{
+	font-size: 12px;
+	line-height: 16px;
+	
+	&__button{
+		cursor: pointer;
+		border: none;
+		padding: 8px;
+		background: #121212;
+		color: #BDBDBD;
+		&:hover{
+			color: #F2F2F2;
+			background: #4F4F4F;
+		}
+		&--active{
+			color: #F2F2F2;
+			background: #4F4F4F;
+		}
+	}
+}
+@media (min-width:$sizeTablet) {
+	.tabs{
+		display: none;
+	}	
+}
