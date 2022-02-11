@@ -1,22 +1,22 @@
-const openSelect =() => {
-	const selects = document.querySelectorAll('.select')
-	
-	selects.forEach(select => {
-		const selectHeader = select.querySelector('.select__header')
-		const headerSpan = selectHeader.querySelector('.select__current')
-		const selectBody = select.querySelector('.select__body')
+const openSelect = () => {
+  const selects = document.querySelectorAll(".select");
 
-		selectHeader.addEventListener('click', ()=> {
-			selectBody.classList.toggle('select__body_active')
-		})
+  selects.forEach((select) => {
+    const selectHeader = select.querySelector(".select__header");
+    const headerSpan = selectHeader.querySelector(".select__current");
+    const selectBody = select.querySelector(".select__list");
 
-		selectBody.addEventListener('click', (e)=> {
-			if(e.target.classList.contains('select__item')){
-				headerSpan.innerText = e.target.innerText;
-				selectBody.classList.toggle('select__body_active')	
-			}
-		})
-	})
-}
+    selectHeader.addEventListener("click", () => {
+      selectBody.classList.toggle("select__list_active");
+    });
 
-export default openSelect
+    selectBody.addEventListener("click", (e) => {
+      if (e.target.classList.contains("select__item")) {
+        headerSpan.innerText = e.target.innerText;
+        selectBody.classList.toggle("select__list_active");
+      }
+    });
+  });
+};
+
+export default openSelect;
