@@ -1,6 +1,7 @@
 переделать humburger
 
 структурировать файлы
+повесить active на select
 
 https://icomoon.io/app/#/select/font
 
