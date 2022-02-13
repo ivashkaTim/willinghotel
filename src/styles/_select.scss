@@ -6,7 +6,7 @@
   &__current {
     &::after {
       display: inline-block;
-      content: "";
+      content: '';
       width: 16px;
       height: 16px;
       background-image: url(../images/select_arrow.svg);
@@ -20,11 +20,6 @@
       color: #fff;
     }
   }
-  &__icon {
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-  }
   &__list {
     display: none;
     left: 0;
@@ -37,11 +32,6 @@
     padding: 8px;
     width: 51px;
     background-color: #121212;
-    &_active {
-      top: -9px;
-      left: -9px;
-      display: block;
-    }
   }
   &__item {
     cursor: pointer;
@@ -52,5 +42,13 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.select.active {
+  .select__list {
+    top: -9px;
+    left: -9px;
+    display: block;
   }
 }

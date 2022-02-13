@@ -37,6 +37,6 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "bemto.pug": "^2.1.0"
+    "swiper": "^8.0.5"
   }
 }

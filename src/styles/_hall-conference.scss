@@ -1,47 +1,40 @@
-.hall-conference{
-	&__container{
-		background-color: #121212;
-		padding-top: 48px;
-	}
-	&__top{
-		padding-bottom: 48px;
-	}
-	&__title{
-		margin-bottom: 24px;
-	}
-	&__text{
-		color: #BDBDBD;
-		margin-bottom: 48px;
-	}
+.hall-conference {
+  padding-top: 48px;
+  background-color: #121212;
+  &__top {
+    padding-bottom: 48px;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__text {
+    color: #bdbdbd;
+    margin-bottom: 48px;
+  }
 }
 
-@media (min-width:$sizeTablet){
-	.hall-conference{
-		&__container{
-			padding-top: 64px;
-		}
-		&__top{
-			padding-bottom: 56px;
-		}
-		&__title{
-			margin-bottom: 0;
-			margin-right: 50px;
-		}
-		&__text{
-			color: #BDBDBD;
-			margin-bottom: 0;
-			display: inline-block;
-		}
-	}
+@media (min-width: $sizeTablet) {
+  .hall-conference {
+    padding-top: 64px;
+    &__top {
+      padding-bottom: 56px;
+    }
+    &__title {
+      margin-bottom: 0;
+      margin-right: 50px;
+    }
+    &__text {
+      color: #bdbdbd;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+  }
 }
 
-@media (min-width:$sizeDesktop){
-	.hall-conference{
-		&__container{
-			padding-top: 64px;
-		}
-		&__top{
-			padding-bottom: 64px;
-		}
-	}
+@media (min-width: $sizeDesktop) {
+  .hall-conference {
+    &__top {
+      padding-bottom: 64px;
+    }
+  }
 }
