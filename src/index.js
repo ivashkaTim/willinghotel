@@ -8,13 +8,13 @@ import './styles/index.scss';
 // import 'swiper/css/pagination';
 
 import openBurgerMenu from './modules/openBurgerMenu';
-import changeTabs from './modules/changeTabs';
+import changeLinkActive from './modules/changeLinkActive';
 import openSelect from './modules/openSelect';
 
 openBurgerMenu();
-changeTabs();
+changeLinkActive('.tabs', 'tabs__button', 'tabs__button--active');
+changeLinkActive('.hall-conference__list', 'hall-conference__link', 'hall-conference__link--active');
 openSelect();
-
 // const swiper = new Swiper('.swiper', {
 //   slidesPerView: 1,
 //   spaceBetween: 16,

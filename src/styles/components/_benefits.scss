@@ -1,0 +1,49 @@
+.benefits{
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 14px;
+	line-height: 20px;
+	width: 1550px;
+	&__item{
+		max-width: 240px;
+		display: inline-block;
+		& + &{
+			margin-left: 16px;
+		}
+		&::before{
+			content: '';
+			width: 40px;
+			height: 40px;
+			display: block;
+			margin-bottom: 12px;
+		}
+		&--support{
+			&::before{
+				background: url(/src/images/benefits/Support.svg) no-repeat center;	
+			}
+		}
+		&--security{
+			&::before{
+				background: url(/src/images/benefits/Security.svg) no-repeat center;	
+			}
+		}
+		&--wifi{
+			&::before{
+				background: url(/src/images/benefits/WiFi.svg) no-repeat center;	
+			}
+		}
+		&--parking{
+			&::before{
+				background: url(/src/images/benefits/Parking.svg) no-repeat center;	
+			}
+		}
+		&--projector
+			&::before{
+				background: url(/src/images/benefits/Projector.svg) no-repeat center;	
+			}
+		}
+		&--gifts{
+			&::before{
+				background: url(/src/images/benefits/Gift.svg) no-repeat center;	
+			}
+		}
+	}

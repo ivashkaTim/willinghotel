@@ -1,5 +1,6 @@
 .apartaments {
   padding-top: 48px;
+  padding-bottom: 24px;
   &__container {
     overflow-x: hidden;
   }
@@ -12,7 +13,7 @@
   }
   &__list {
     width: 2000px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
   &__card-hotel {
     display: inline-block;
