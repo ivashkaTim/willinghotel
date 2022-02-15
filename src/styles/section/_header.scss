@@ -156,7 +156,11 @@
       padding-right: 96px;
       margin-bottom: 0;
     }
+    &__hamburger {
+      display: none;
+    }
   }
+
   .nav {
     margin-top: 24px;
   }
