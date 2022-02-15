@@ -11,15 +11,18 @@
     height: 1px;
     background-color: #f2f2f2;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:last-child {
       top: 60%;
     }
   }
+  &_active .hamburger__line{
+    top: 50%;
+  }
   &_active .hamburger__line:first-child {
-    transform: translate(-25%, 25%) rotate(45deg);
+    transform:rotate(45deg);
   }
   &_active .hamburger__line:last-child {
-    transform: translate(-25%, -50%) rotate(-45deg);
+    transform:rotate(-45deg);
   }
 }

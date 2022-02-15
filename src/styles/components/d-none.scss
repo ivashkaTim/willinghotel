@@ -1,0 +1,39 @@
+.d {
+  &-none {
+    &--size-table {
+      @media (min-width: $sizeTablet) {
+        display: none;
+      }
+    }
+    &--size-desktop {
+      @media (min-width: $sizeDesktop) {
+        display: none;
+      }
+    }
+  }
+  &-block {
+    &--size-table {
+      @media (min-width: $sizeTablet) {
+        display: block;
+      }
+    }
+    &--size-desktop {
+      @media (min-width: $sizeDesktop) {
+        display: block;
+      }
+    }
+  }
+
+  &-inline-block {
+    &--size-table {
+      @media (min-width: $sizeTablet) {
+        display: inline-block;
+      }
+    }
+    &--size-desktop {
+      @media (min-width: $sizeDesktop) {
+        display: inline-block;
+      }
+    }
+  }
+}

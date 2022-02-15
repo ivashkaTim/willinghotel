@@ -1,17 +1,15 @@
 .header {
   background-color: #121212;
+  padding: 12px 0;
   &__container {
     z-index: 1;
     background: url(../images/header/LogoBlack.svg) 20px 50% no-repeat;
-    height: 56px;
   }
   &__left {
     display: none;
-    height: 100%;
     width: 50%;
     text-align: left;
     vertical-align: middle;
-    line-height: 56px;
   }
   &__select {
     z-index: 10;
@@ -24,8 +22,6 @@
   }
   &__right {
     display: inline-block;
-    line-height: 56px;
-    height: 100%;
     width: 100%;
     text-align: right;
   }

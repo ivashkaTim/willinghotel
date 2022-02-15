@@ -3,6 +3,7 @@
   color: #bdbdbd;
   font-size: 12px;
   line-height: 16px;
+  min-width: 45px;
   &__current {
     &::after {
       display: inline-block;
@@ -28,21 +29,22 @@
     background: inherit;
     border: 1px solid #272727;
     box-shadow: 0 0 0.83333rem hsl(0deg 0% 100% / 4%);
-    padding: 8px;
     min-width: 51px;
     background-color: #121212;
   }
   &__item {
     cursor: pointer;
-    margin-bottom: 12px;
+    padding: 0 8px 6px;
+    &:first-child{
+      padding-top: 8px;
+    }
+    & + & {
+      padding-top: 6px;
+    }
     &:hover {
       color: #fff;
     }
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
-
 
   &.active {
     .select__list {

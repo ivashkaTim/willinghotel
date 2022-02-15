@@ -28,8 +28,8 @@ header.header
 						img(src="../images/social/WhatsApp.svg", alt="WhatsApp")
 		.header__right
 			img( class="header__call icon" src="../images/header/phone.svg", alt="call")
-			button(class="button header__button header__button--desktop") Написать нам
-			button(class="button button--secondary button--color-black header__button header__button--table ") Забронировать
+			button(class="button button--secondary button--size-medium header__button header__button--desktop") Написать нам
+			button(class="button button--secondary button--size-medium button--color-black header__button header__button--table ") Забронировать
 			.hamburger.header__hamburger
 				span(class ="hamburger__line" )
 				span(class ="hamburger__line" )
@@ -38,7 +38,7 @@ header.header
 			h1(class="title title--size-big title--color-white") Отель мечты в центре Минска
 			.gradient-line.gradient-line--black.header__gradient-line
 		nav(class="nav header__nav") 
-			.nav__item
+			.nav__item.d-none--size-desktop
 				a(class="link link--primary nav__link" href="tel:+375293369016")  +375 29 336 90 16
 				.social.nav__social
 					a(class="social__icon" href="viber://chat?number=%2B375293369016") 
@@ -47,10 +47,10 @@ header.header
 						img(src="../images/social/teleg.svg", alt="teleg")
 					a(class="social__icon" href="https://wa.me/+375293369016") 
 						img(src="../images/social/WhatsApp.svg", alt="WhatsApp")
-			.nav__item
+			.nav__item.d-none--size-desktop
 				a(class="link link--primary nav__link" href="#")  Написать нам
-			.nav__item
-				a(class="link link--primary nav__link" href="#")  Забронировать номер
+			.nav__item.d-none--size-table
+				a(class="link link--primary nav__link " href="#")  Забронировать номер
 			.nav__item
 				a(class="link link--primary nav__link" href="#")  Номера и апартаменты
 			.nav__item

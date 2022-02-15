@@ -14,65 +14,35 @@
       color: #828282;
     }
   }
-
   &__center {
     margin-bottom: 48px;
   }
   &__nav {
-    width: calc(100% + 40px);
-    position: relative;
-    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 22px;
     &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 4px;
-      background: #828282;
-      bottom: -2px;
-      @media (max-width: $sizeMaxMobile) {
-      margin: 0 -6%;
-      }
+      left: -7%;
+      right: -7%;
     }
   }
-  &__list {
-    margin: 0 auto;
-    padding-bottom: 12px;
-    @media (max-width: $sizeMaxMobile) {
-      width: 360px;
-    }
-  }
-
-  &__link {
+  &__photo {
     position: relative;
-    &--active {
-      color: #fff;
-      &::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 4px;
-        background-color: #bdbdbd;
-        left: 0;
-        color: #bdbdbd;
-        top: 28px;
-        z-index: 2;
-      }
-    }
-    & + & {
-      margin-left: 24px;
-    }
-  }
-
-  &__image {
-    z-index: 5;
-    width: 320px;
-    height: 240px;
+    height: 75vw;
+    overflow: hidden;
+    margin: 0 -6.7%;
+    background-color: #121212;
+    z-index: 1;
     margin-bottom: 24px;
     img {
-      margin: 0 -20px;
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
-      height: 100%;
+      object-fit: cover;
     }
   }
   &__conditions {
@@ -99,21 +69,28 @@
       line-height: 28px;
     }
   }
+  &__benefits {
+    @media (max-width: $sizeMaxMobile) {
+      padding-bottom: 8px;
+      margin-bottom: 40px;
+    }
+  }
   &__buttons {
     margin-bottom: 48px;
     button + button {
       border: none;
       @media (max-width: $sizeMaxMobile) {
         margin-top: 8px;
-        }
-     
-      
+      }
     }
   }
   &__button {
-    width: 100%;
+    @media (max-width: $sizeMaxMobile) {
+      width: 100%;
+    }
   }
   &__bottom {
+    position: relative;
     h3 {
       margin-bottom: 24px;
     }
@@ -124,46 +101,58 @@
       margin-bottom: 32px;
     }
   }
+  &__image {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 55%;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: $sizeTablet) {
   .hall-conference {
-    padding-top: 68px;
+    padding-top: 66px;
+    padding-bottom: 120px;
     &__top {
-      margin-bottom: 56px;
+      margin-bottom: 64px;
     }
     &__title {
       margin-bottom: 0;
-      margin-right: 50px;
+      margin-right: 7%;
       display: inline-block;
     }
     &__text {
       color: #bdbdbd;
       margin-bottom: 0;
       display: inline-block;
-      max-width: 346px;
+      max-width: 41%;
     }
-    &__center{
+    &__center {
       position: relative;
       padding-left: 50%;
     }
     &__nav {
-      text-align: right;
-      width: calc(100% + 40px);
       margin-bottom: 28px;
+      &::after {
+        left: -12%;
+        right: -12%;
+      }
     }
     &__list {
       display: inline-block;
       margin-right: 40px;
     }
-    &__image {
+    &__photo {
       position: absolute;
-      top: -60px;
       left: 0;
-      filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.15));
-      width: 312px;
-      height: 223px;
-      display: inline-block;
+      width: 45%;
+      top: 0;
+      height: 29vw;
+      box-shadow: 0 0 12px hsl(0deg 0% 100% / 15%);
       margin: 0;
       img {
         margin: 0;
@@ -171,11 +160,21 @@
     }
     &__conditions {
       display: inline-block;
-      max-width: 344px;
       margin-bottom: 28px;
     }
-    &__button{
-      width: 50%;
+    &__benefits {
+      margin-bottom: 34px;
+    }
+    &__bottom {
+      p {
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 378px;
+        margin-bottom: 40px;
+      }
+    }
+    &__image {
+      display: block;
     }
   }
 }
@@ -184,6 +183,12 @@
   .hall-conference {
     &__top {
       padding-bottom: 64px;
+    }
+    &__title{
+      margin-right: 10%;
+    }
+    &__photo{
+      height: 380px;
     }
   }
 }
