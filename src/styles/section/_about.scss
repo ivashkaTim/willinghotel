@@ -1,31 +1,17 @@
 .about {
-  &::after {
+  &__background-image {
+    display: none;
+    z-index: 1;
+  }
+  &__item {
     display: block;
-    content: "";
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(
-      90deg,
-      #ffffff 0%,
-      #e0e0e0 51.56%,
-      #ffffff 100%
-    );
+    margin-bottom: 80px;
   }
-  &__top {
-    padding-top: 16px;
-    background-color: #121212;
-    padding-bottom: 16px;
-  }
-  &__bottom {
-    overflow-x: hidden;
-  }
-  &__image {
+  &__photo {
     position: relative;
+    height: 67.5vw;
     @media (max-width: $sizeMaxMobile) {
-      min-height: 75vw;
-      height: 75vw;
-      margin: 0 -7%;
-      margin-bottom: 28px;
+      margin: 0 -20px 32px;
     }
     img {
       display: block;
@@ -34,60 +20,94 @@
       object-fit: cover;
     }
   }
-  &__text {
-    margin-bottom: 28px;
+  &__title {
+    margin-bottom: 24px;
   }
-}
-
-@media (min-width: $sizeTablet) {
-  .about {
-    &__top {
-      padding-bottom: 48px;
+  &__button {
+	margin-top: 40px;
+    @media (max-width: $sizeMaxMobile) {
+      width: 100%;
     }
-    &__title {
-      text-align: center;
+  }
+  
+  @media (min-width: $sizeTablet) {
+    padding-top: 120px;
+    &__container {
+      position: relative;
     }
-    &__bottom {
-      margin-top: -24px;
+    &__background-image {
+      display: block;
+      position: absolute;
+      top: -120px;
+      right: 0;
+      width: 50.5%;
     }
-    &__image {
-      z-index: 2;
-      margin-bottom: 28px;
-      min-height: 42.19vw;
-      height: 42.19vw;
-      img {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
-        height: 100%;
-        width: auto;
-        object-fit: cover;
+    &__item {
+      margin-bottom: 120px;
+      position: relative;
+    }
+    &__photo {
+      display: inline-block;
+      vertical-align: middle;
+      &--left {
+        margin-left: -40px;
+        margin-right: 32px;
+        height: 26.5vw;
+        width: 51vw;
+      }
+      &--right {
+        float: right;
+        margin-right: -40px;
+        margin-left: 32px;
+        height: 35vw;
+        width: 45vw;
+        max-height: 320px;
       }
     }
-    &__text {
-      width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
+    &__info {
+      display: inline-block;
+      vertical-align: middle;
+      &--right {
+        width: 39vw;
+      }
+      &--left {
+        width: 45vw;
+      }
     }
   }
-}
 
-@media (min-width: $sizeDesktop) {
-  .about {
-    &__top {
-      display: none;
+  @media (min-width: $sizeDesktop) {
+    padding-top: 148px;
+	&__background-image {
+		width: 50.5%;
+	  }
+    &__item {
+      margin-bottom: 148px;
     }
-    &__image {
-      min-height: 30rem;
-      height: 30rem;
+    &__photo {
+      &--left {
+        margin-left: 0;
+        margin-right: 54px;
+        height: 27vw;
+        width: 43vw;
+      }
+      &--right {
+        margin-right: 0;
+        margin-left: 112px;
+        height: 35vw;
+        width: 36.5vw;
+      }
     }
-    &__text {
-      margin-top: 28px;
-    }
+    &__info {
+      &--right {
+        width: 36vw;
+      }
+      &--left {
+        width: 38vw;
+      }
+    }	
+	&__button {
+		margin-top: 48px;
+	  }
   }
 }

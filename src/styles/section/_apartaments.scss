@@ -45,13 +45,15 @@
     text-align: center;
     margin: 0 auto;
     border-bottom: 2px solid #c0bfbf;
-    margin-bottom: 80px;
   }
   &__button {
     display: none;
     position: absolute;
     bottom: 28px;
     right: 0;
+  }
+  &__bottom{
+    margin-bottom: 80px;
   }
 }
 
@@ -72,11 +74,14 @@
     }
     &__list {
       margin-bottom: 94px;
-      margin: 0 -40px 100px;
+      margin: 0 -40px;
       padding: 40px 40px 24px;
     }
     &__button {
       display: inline-block;
+    }
+    &__bottom{
+      margin-bottom: 100px;
     }
   }
 }

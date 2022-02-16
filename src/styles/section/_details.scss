@@ -1,0 +1,27 @@
+.details {
+  &__attention-item {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    & + & {
+      margin-top: 16px;
+    }
+  }
+  &__image {
+    width: 26%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5%;
+    img {
+      height: 54px;
+    }
+  }
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 69%;
+  }
+  &__benefits {
+    margin-top: 48px;
+  }
+}

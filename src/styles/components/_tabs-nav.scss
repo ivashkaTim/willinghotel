@@ -9,10 +9,10 @@
     bottom: 3px;
   }
   &__list {
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
     @media (max-width: 400px) {
+      white-space: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
       margin: 0 -20px;
       padding: 0 20px;
     }
@@ -43,6 +43,11 @@
         bottom: 3px;
         z-index: 5;
       }
+    }
+  }
+  @media (min-width: $sizeDesktop) {
+    &__item {
+      padding: 0 16px 18px;
     }
   }
 }

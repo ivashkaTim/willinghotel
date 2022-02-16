@@ -1,10 +1,8 @@
 WILLING HOTEL
 
-лого добавить как картинку
-проверить чтобы не было вложенных отступов
-z-index на header
-добавить btn модификаторы
+найти где испольщзуется title и заменить на класс size-medium
 медиа запросы вынести в основноый блок
+в details.scss
 
 https://icomoon.io/app/#/select/font
 

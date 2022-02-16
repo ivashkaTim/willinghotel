@@ -1,8 +1,22 @@
-main.about
-	.container.about__top
-		h2(class="title about__title title--size-big title--color-white") Отель мечты в&nbsp;центре&nbsp;Минска
-	.container.about__bottom
-		.about__image
-			img(src="../images/about/hotel.png", alt="hotel")
-		.text.about__text
-			p Cовременный отель в Минске на пересечении улиц имени Ленина и Октябрьской, где гармонично соседствуют история и современность, события уникального прошлого и яркого настоящего
+section.about
+	.container.about__container
+		.about__background-image
+			img(src="../images/about/border.svg", alt="border")
+		.about__item 
+			.about__photo.about__photo--left
+				img(src="../images/about/about1.png", alt="photo")
+			.about__info.about__info--right
+				h3.title.title--color-black.title--size-medium.about__title Уникальность
+				.text.text--size-medium.text--color-gray
+					p Визуальный стиль отеля идеально подходит как для&nbsp;комфортного проживания, так и&nbsp;для&nbsp;проведения мероприятий любого уровня в&nbsp;конференц-залах
+		.about__item 
+			.about__photo.about__photo--right
+				img(src="../images/about/about2.png", alt="photo")
+			.about__info.about__info--left
+				h3.title.title--color-black.title--size-medium.about__title Творческий центр Минска 
+				.text.text--size-medium.text--color-gray
+					p Отель находится на пересечении улиц Ленина и&nbsp;Октябрьской. Это&nbsp;место окружают самые интересные бары, рестораны, арт-пространства и&nbsp;ночные клубы&nbsp;— все&nbsp;то, что так притягивает самых интересных и&nbsp;прогрессивных людей
+				button.button.button--primary.button--size-big.button--color-white.about__button Посмотреть на карте
+
+
+
