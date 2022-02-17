@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?liiebw');
-  src:  url('fonts/icomoon.eot?liiebw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?liiebw') format('truetype'),
-    url('fonts/icomoon.woff?liiebw') format('woff'),
-    url('fonts/icomoon.svg?liiebw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?u40ett');
+  src:  url('fonts/icomoon.eot?u40ett#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u40ett') format('truetype'),
+    url('fonts/icomoon.woff?u40ett') format('woff'),
+    url('fonts/icomoon.svg?u40ett#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icons8-tripadvisor-1-1:before {
+  content: "\e905";
+  color: #bdbdbd;
+}
+.icon-la_facebook-square-1:before {
+  content: "\e903";
+  color: #bdbdbd;
+}
+.icon-ant-design_instagram-outlined-1:before {
+  content: "\e904";
+  color: #bdbdbd;
+}
 .icon-area-1:before {
   content: "\e901";
   color: #bdbdbd;

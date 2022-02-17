@@ -11,11 +11,6 @@
       margin-bottom: 24px;
     }
   }
-  &__text {
-    p {
-      color: #828282;
-    }
-  }
   &__center {
     margin-bottom: 48px;
   }
@@ -24,8 +19,7 @@
     line-height: 20px;
     margin-bottom: 16px;
     &::after {
-      left: -7%;
-      right: -7%;
+      background-color: #828282;
     }
   }
   &__photo {
@@ -128,7 +122,6 @@
       display: inline-block;
     }
     &__text {
-      color: #bdbdbd;
       margin-bottom: 0;
       display: inline-block;
       width: 50%;
@@ -219,8 +212,6 @@
     }
     &__text {
       width: 45%;
-      font-size: 16px;
-      line-height: 24px;
     }
     &__nav {
       &::before {
@@ -252,7 +243,7 @@
       margin: 0;
       position: absolute;
       bottom: -7.5%;
-      right: 0%;
+      left: 50%;
       max-width: 600px;
       border-left: 4px solid #4f4f4f;
       border-top: 4px solid #4f4f4f;

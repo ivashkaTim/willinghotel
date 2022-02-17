@@ -1,10 +1,10 @@
 .card-hotel {
   position: relative;
   &__text {
-    color: #121212;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 20px;
+    color: #121212;
   }
   &__image {
     width: 100%;
@@ -34,7 +34,6 @@
       font-family: Icomoon;
       color: #bdbdbd;
       font-size: 24px;
-      content: "";
       display: block;
       margin-left: auto;
       margin-right: auto;

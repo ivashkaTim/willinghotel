@@ -1,22 +1,11 @@
 .text {
-  & > * {
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  p {
-    font-family: GothamPro;
-    font-size: 14px;
-    line-height: 20px;
-    color: #4f4f4f;
-    margin: 12px 0;
-  }
+  font-family: GothamPro;
   &--color {
     &-gray {
       color: #4f4f4f;
+    }
+    &-gray-black {
+      color: #828282;
     }
     &-black {
       color: #121212;
@@ -32,7 +21,6 @@
         line-height: 24px;
       }
     }
-
     &-medium {
       p {
         font-size: 14px;
@@ -44,11 +32,7 @@
 
 @media (min-width: $sizeDesktop) {
   .text {
-    p {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    &--size {  
+    &--size {
       &-medium {
         p {
           font-size: 16px;
@@ -57,5 +41,4 @@
       }
     }
   }
-  
 }

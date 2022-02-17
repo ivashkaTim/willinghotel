@@ -1,22 +1,32 @@
 .benefits {
   &__item {
     display: inline-block;
-    max-width: 240px;
     vertical-align: top;
     img {
       width: 40px;
       height: 40px;
       display: block;
-      margin-bottom: 12px;
     }
     span {
       font-size: 14px;
       line-height: 20px;
-      color: #828282;
+    }
+    &--hall-conference {
+      img {
+        margin-bottom: 12px;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+    &--services {
+      span {
+        color: #828282;
+      }
     }
   }
   &__title {
-    font-family: Gotham Pro;
+    font-family: GothamPro;
     font-weight: 500;
     margin-bottom: 4px;
   }
@@ -28,30 +38,66 @@
     overflow-y: hidden;
     &__item {
       white-space: normal;
+      max-width: 240px;
       & + & {
-        max-width: 240px;
         margin-left: 16px;
       }
     }
   }
   @media (min-width: $sizeTablet) {
     &__item {
-      max-width: 212px;
-      margin-right: 24px;
-      margin-bottom: 28px;
-      img {
-        margin-bottom: 11px;
+      &--hall-conference {
+        max-width: 212px;
+        margin-right: 24px;
+        margin-bottom: 28px;
+        img {
+          margin-bottom: 11px;
+        }
+      }
+      &--services {
+        max-width: 328px;
+        margin-bottom: 24px;
+        &:nth-child(2n) {
+          margin-left: 32px;
+        }
       }
     }
   }
-
-  @media (min-width: $sizeDesktop) {
+  @media (max-width: $sizeMaxTablet) {
     &__item {
-      max-width: 208px;
-      margin-right: 24px;
-      margin-bottom: 32px;
-      img {
-        margin-bottom: 12px;
+      &--services {
+        img {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  @media (min-width: $sizeDesktop) {
+    &__info {
+      max-width: 82%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__item {
+      &--hall-conference {
+        max-width: 208px;
+        margin-right: 24px;
+        margin-bottom: 32px;
+        img {
+          margin-bottom: 12px;
+        }
+      }
+      &--services {
+        white-space: normal;
+        max-width: 100%;
+        &:nth-child(2n) {
+          margin-left: 0;
+        }
+        img {
+          display: inline-block;
+          margin-right: 24px;
+          vertical-align: middle;
+        }
       }
     }
   }

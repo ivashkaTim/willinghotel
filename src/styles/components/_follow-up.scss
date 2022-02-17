@@ -1,0 +1,32 @@
+.follow-up {
+  &__item {
+    display: inline-block;
+    & + & {
+      margin-left: 12px;
+    }
+    &:hover {
+      opacity: 0.75;
+    }
+    &::before {
+      display: inline-block;
+      font-family: Icomoon;
+      color: #bdbdbd;
+      font-size: 32px;
+    }
+    &--instagram {
+      &::before {
+        content: "\e904";
+      }
+    }
+    &--facebook {
+      &::before {
+        content: "\e903";
+      }
+    }
+    &--tripadvisor {
+      &::before {
+        content: "\e905";
+      }
+    }
+  }
+}
