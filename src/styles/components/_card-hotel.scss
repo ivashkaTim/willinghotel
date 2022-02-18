@@ -8,16 +8,26 @@
   }
   &__image {
     width: 100%;
-    height: 240px;
+    min-height: 240px;
     margin-bottom: 16px;
+    position: relative;
     img {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
       width: 100%;
-      height: 100%;
+      object-fit: cover;
     }
   }
   &__conditions {
     margin-bottom: 24px;
-    padding: 0 7px;
+    @media (max-width: $sizeMaxMobile) {
+      padding: 0 7px;
+    }
   }
   &__condition {
     position: relative;
@@ -41,10 +51,10 @@
         margin-bottom: 6px;
       }
     }
-    &:first-child{
+    &:first-child {
       padding-left: 0;
     }
-    &:last-child{
+    &:last-child {
       padding-right: 0;
     }
     &--people {
@@ -93,9 +103,8 @@
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
       }
     }
-
     &__conditions{
-      padding: 0;
+      margin-bottom: 26px;
     }
     &__condition {
       padding: 0;
@@ -109,8 +118,7 @@
         margin-right: 0;
       }
     }
-    
-    &__text{
+    &__text {
       margin-bottom: 16px;
     }
   }

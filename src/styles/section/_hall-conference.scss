@@ -1,10 +1,10 @@
 .hall-conference {
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 48px;
   background-color: #121212;
   padding-bottom: 80px;
   &__top {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
   &__title {
     @media (max-width: $sizeMaxMobile) {
@@ -17,7 +17,7 @@
   &__nav {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     &::after {
       background-color: #828282;
     }
@@ -25,6 +25,7 @@
   &__photo {
     position: relative;
     height: 75vw;
+    min-height: 75vw;
     overflow: hidden;
     margin: 0 -6.7%;
     background-color: #121212;
@@ -98,11 +99,11 @@
       margin-bottom: 32px;
     }
   }
-  &__image {
+  &__decorative {
     display: none;
     position: absolute;
     left: 50%;
-    bottom: -115px;
+    bottom: -120px;
     width: 55%;
     img {
       width: 100%;
@@ -113,9 +114,9 @@
 @media (min-width: $sizeTablet) {
   .hall-conference {
     padding-top: 66px;
-    padding-bottom: 115px;
+    padding-bottom: 120px;
     &__top {
-      margin-bottom: 66px;
+      margin-bottom: 64px;
     }
     &__title {
       width: 50%;
@@ -142,7 +143,7 @@
         position: absolute;
         left: 100%;
         right: -12%;
-        bottom: 3px;
+        top: 100%;
       }
       &::after {
         left: -12%;
@@ -154,17 +155,14 @@
       margin-right: 40px;
     }
     &__photo {
-      max-height: 300px;
       position: absolute;
-      left: 0;
       width: 45%;
+      height: 29.5vw;
+      min-height: 29.5vw;
+      left: 0;
       top: 0;
-      height: 29vw;
       box-shadow: 0 0 12px hsl(0deg 0% 100% / 15%);
       margin: 0;
-      img {
-        margin: 0;
-      }
     }
     &__button {
       & + & {
@@ -173,7 +171,7 @@
     }
     &__conditions {
       display: inline-block;
-      margin-bottom: 19px;
+      margin-bottom: 32px;
       span {
         margin-top: 8px;
         display: block;
@@ -182,22 +180,30 @@
       }
     }
     &__benefits {
-      margin-bottom: 37px;
+      margin-bottom: 64px;
       max-width: 750px;
-      margin-right: -10%;
     }
     &__consultation {
       p {
         font-size: 20px;
         line-height: 28px;
         max-width: 378px;
-        margin-bottom: 40px;
+        margin-bottom: 38px;
       }
     }
-    &__image {
+    &__decorative {
       display: block;
     }
   }
+}
+@media (min-width:1000px) {
+  .hall-conference{
+    &__photo{
+      height: 300px;
+      min-height: 300px;
+    }
+  }
+  
 }
 
 @media (min-width: $sizeDesktop) {
@@ -207,13 +213,19 @@
     &__container {
       position: relative;
     }
-    &__title {
-      margin-right: 50px;
-    }
     &__text {
-      width: 45%;
+      vertical-align: middle;
+      padding-left: 48px;
+      p {
+        vertical-align: middle;
+      }
+    }
+    &__title{
+      vertical-align: middle;
     }
     &__nav {
+      margin-bottom: 34px;
+      margin-left: 48px;
       &::before {
         right: -20%;
       }
@@ -222,13 +234,17 @@
       }
     }
     &__center {
-      padding-left: 55%;
-      margin-bottom: 150px;
+      margin-bottom: 148px;
+    }
+    &__information{
+      margin-left: 48px;
     }
     &__conditions {
       margin-bottom: 33px;
     }
     &__photo {
+      height: 328px;
+      min-height: 328px;
       max-height: 328px;
     }
     &__button {
@@ -244,6 +260,7 @@
       position: absolute;
       bottom: -7.5%;
       left: 50%;
+      bottom: -40px;
       max-width: 600px;
       border-left: 4px solid #4f4f4f;
       border-top: 4px solid #4f4f4f;
@@ -282,15 +299,12 @@
       }
     }
     &__consultation {
-      h3 {
-        max-width: 456px;
-      }
+      width: 50%;
       p {
-        max-width: 430px;
         margin-bottom: 48px;
       }
     }
-    &__image {
+    &__decorative {
       display: none;
     }
   }
