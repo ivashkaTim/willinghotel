@@ -8,6 +8,7 @@ WILLING HOTEL
 4. сделать оболочку и ей дать after before в services
 5. добавить декоративные линии
 
+ok
 
 
 
