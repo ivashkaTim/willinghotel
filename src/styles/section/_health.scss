@@ -1,5 +1,6 @@
 .health {
   padding-top: 80px;
+
   &__photo {
     overflow: hidden;
     position: relative;
@@ -7,6 +8,7 @@
     @media (max-width: $sizeMaxMobile) {
       margin: 0 -20px 48px;
     }
+
     img {
       display: block;
       position: absolute;
@@ -20,30 +22,36 @@
       object-fit: cover;
     }
   }
+
   &__title {
     margin-bottom: 24px;
   }
+
   &__text {
     margin-bottom: 32px;
   }
+
   &__button {
     @media (max-width: $sizeMaxMobile) {
       width: 100%;
     }
   }
+
   @media (min-width: $sizeTablet) {
+    padding-top: 120px;
     &__photo {
       display: inline-block;
-      margin-left: -40px;
       height: 35.5vw;
-      width: 56%;
+      width: calc(50% + 46px);
       vertical-align: middle;
-      max-width: 514px;
-      max-height: 332px;
+      max-height: 400px;
+      @media (max-width: $sizeMaxTablet) {
+        margin-left: -40px;
+      }
     }
     &__info {
       display: inline-block;
-      width: 48%;
+      width: calc(50% - 6px);
       padding-left: 32px;
       vertical-align: middle;
     }
@@ -52,11 +60,14 @@
     }
   }
   @media (min-width: $sizeDesktop) {
+    padding-top: 148px;
     &__photo {
-      margin-left: 0;
+      height: 27.67vw;
+      width: calc(50% + 10px);
     }
     &__info {
-      padding-left: 5%;
+      width: calc(50% - 10px);
+      padding-left: 54px;
     }
     &__text {
       margin-bottom: 48px;
