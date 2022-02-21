@@ -9,7 +9,7 @@ WILLING HOTEL
 5. добавить декоративные линии
 
 ok
-
+ok
 
 
 https://icomoon.io/app/#/select/font
