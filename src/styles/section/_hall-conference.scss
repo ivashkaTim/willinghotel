@@ -3,25 +3,35 @@
   padding-top: 48px;
   background-color: #121212;
   padding-bottom: 80px;
+
+  &__container {
+    overflow: hidden;
+  }
+
   &__top {
     margin-bottom: 46px;
   }
+
   &__title {
     @media (max-width: $sizeMaxMobile) {
       margin-bottom: 24px;
     }
   }
+
   &__center {
     margin-bottom: 48px;
   }
+
   &__nav {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 30px;
+
     &::after {
       background-color: #828282;
     }
   }
+
   &__photo {
     position: relative;
     height: 75vw;
@@ -31,6 +41,7 @@
     background-color: #121212;
     z-index: 1;
     margin-bottom: 24px;
+
     img {
       min-width: 100%;
       min-height: 100%;
@@ -42,23 +53,29 @@
       object-fit: cover;
     }
   }
+
   &__conditions {
     margin-bottom: 24px;
+
     * {
       color: #bdbdbd;
       font-size: 14px;
       line-height: 20px;
     }
+
     ul {
       margin-bottom: 16px;
     }
+
     li {
       display: inline-block;
       color: #828282;
+
       &:first-child {
         margin-right: 48px;
       }
     }
+
     span {
       margin-top: 8px;
       display: block;
@@ -66,12 +83,14 @@
       line-height: 28px;
     }
   }
+
   &__benefits {
     @media (max-width: $sizeMaxMobile) {
       padding-bottom: 8px;
-      margin-bottom: 46px;
+      margin-bottom: 19px;
     }
   }
+
   &__buttons {
     button + button {
       border: none;
@@ -80,18 +99,18 @@
       }
     }
   }
+
   &__button {
     @media (max-width: $sizeMaxMobile) {
       width: 100%;
     }
   }
-  &__bottom {
-    position: relative;
-  }
+
   &__consultation {
     h3 {
       margin-bottom: 24px;
     }
+
     p {
       font-size: 16px;
       line-height: 24px;
@@ -99,12 +118,14 @@
       margin-bottom: 32px;
     }
   }
+
   &__decorative {
     display: none;
     position: absolute;
     left: 50%;
-    bottom: -120px;
-    width: 55%;
+    bottom: 0;
+    width: 50%;
+
     img {
       width: 100%;
     }
@@ -115,26 +136,33 @@
   .hall-conference {
     padding-top: 66px;
     padding-bottom: 120px;
+    position: relative;
+
     &__top {
       margin-bottom: 64px;
     }
+
     &__title {
       width: 50%;
       display: inline-block;
     }
+
     &__text {
       margin-bottom: 0;
       display: inline-block;
       width: 50%;
     }
+
     &__center {
       position: relative;
       padding-left: 50%;
       margin-bottom: 56px;
     }
+
     &__nav {
       margin-bottom: 28px;
       position: relative;
+
       &::before {
         content: "";
         display: block;
@@ -145,15 +173,18 @@
         right: -12%;
         top: 100%;
       }
+
       &::after {
         left: -12%;
         right: 0%;
       }
     }
+
     &__list {
       display: inline-block;
       margin-right: 40px;
     }
+
     &__photo {
       position: absolute;
       width: 45%;
@@ -164,14 +195,17 @@
       box-shadow: 0 0 12px hsl(0deg 0% 100% / 15%);
       margin: 0;
     }
+
     &__button {
       & + & {
         margin-left: 16px;
       }
     }
+
     &__conditions {
       display: inline-block;
       margin-bottom: 32px;
+
       span {
         margin-top: 8px;
         display: block;
@@ -179,10 +213,12 @@
         line-height: 32px;
       }
     }
+
     &__benefits {
       margin-bottom: 64px;
       max-width: 750px;
     }
+
     &__consultation {
       p {
         font-size: 20px;
@@ -191,106 +227,118 @@
         margin-bottom: 38px;
       }
     }
+
     &__decorative {
       display: block;
     }
   }
 }
-@media (min-width:1000px) {
-  .hall-conference{
-    &__photo{
+
+@media (min-width: 1000px) {
+  .hall-conference {
+    &__photo {
       height: 300px;
       min-height: 300px;
     }
   }
-  
+
 }
 
 @media (min-width: $sizeDesktop) {
   .hall-conference {
     padding-bottom: 143px;
     padding-top: 64px;
-    &__container {
-      position: relative;
-    }
+
+
     &__text {
       vertical-align: middle;
       padding-left: 48px;
+
       p {
         vertical-align: middle;
       }
     }
-    &__title{
+
+    &__title {
       vertical-align: middle;
     }
+
     &__nav {
       margin-bottom: 34px;
       margin-left: 48px;
+
       &::before {
         right: -20%;
       }
+
       &::after {
         left: -24%;
       }
     }
+
     &__center {
       margin-bottom: 148px;
     }
-    &__information{
+
+    &__information {
       margin-left: 48px;
     }
+
     &__conditions {
       margin-bottom: 33px;
     }
+
     &__photo {
       height: 328px;
       min-height: 328px;
       max-height: 328px;
     }
+
     &__button {
       & + & {
         margin-left: 24px;
       }
     }
-    &__bottom {
-      position: static;
-    }
+
     &__benefits {
       margin: 0;
       position: absolute;
       bottom: -7.5%;
       left: 50%;
-      bottom: -40px;
+      bottom: 0;
       max-width: 600px;
       border-left: 4px solid #4f4f4f;
       border-top: 4px solid #4f4f4f;
       border-radius: 40px 0 0 0;
-      padding: 56px 46px 0;
+      padding: 56px 46px 104px;
+
       &::after,
       &::before {
         content: "";
         display: block;
         position: absolute;
       }
+
       &::before {
         background: linear-gradient(
-          270deg,
-          hsla(0, 0%, 100%, 0),
-          #121212 0.01%,
-          #4f4f4f
+                        270deg,
+                        hsla(0, 0%, 100%, 0),
+                        #121212 0.01%,
+                        #4f4f4f
         );
         height: 4px;
         left: 40%;
         right: -15%;
         top: -4px;
       }
+
       &::after {
         transform: rotate(180deg);
         background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0) 0%,
-          #121212 0.01%,
-          #4f4f4f 100%
+                        180deg,
+                        rgba(255, 255, 255, 0) 0%,
+                        #121212 0.01%,
+                        #4f4f4f 100%
         );
         width: 4px;
         left: -4px;
@@ -298,12 +346,15 @@
         bottom: -15%;
       }
     }
+
     &__consultation {
       width: 50%;
+
       p {
         margin-bottom: 48px;
       }
     }
+
     &__decorative {
       display: none;
     }

@@ -1,31 +1,38 @@
 .history {
   z-index: 1;
   padding-top: 80px;
-  &__container{
+
+  &__container {
     overflow: hidden;
   }
-  &__top{
+
+  &__top {
     position: relative;
   }
+
   &__title {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 12px;
+    margin-right: 22px;
   }
+
   &__follow-up {
     vertical-align: middle;
     display: inline-block;
   }
+
   &__tabs-nav {
     font-family: Merriweather;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 32px;
+
     &::after {
       background-color: #bdbdbd;
     }
   }
+
   &__list {
     padding: 0 20px 12px;
     white-space: nowrap;
@@ -33,13 +40,16 @@
     overflow-y: hidden;
     margin: 0 -20px 12px;
   }
+
   &__card {
     display: inline-block;
     white-space: normal;
+
     & + & {
       margin-left: 16px;
     }
   }
+
   &__link {
     width: 200px;
     display: block;
@@ -47,28 +57,34 @@
     margin: 0 auto;
     border-bottom: 2px solid #c0bfbf;
   }
-  &__bottom{
+
+  &__bottom {
     margin-top: 32px;
   }
-  &__button{
+
+  &__button {
     height: 52px;
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 2;
-    @media (max-width:$sizeMaxMobile) {
-      display: none;      
+    @media (max-width: $sizeMaxMobile) {
+      display: none;
     }
   }
+
   @media (min-width: $sizeTablet) {
-    padding-top: 120px;
+    padding-top: 128px;
+    &__tabs-nav {
+      font-size: 44px;
+      line-height: 44px;
+      padding-bottom: 16px;
+      margin-bottom: 44px;
+    }
     &__card {
       & + & {
         margin-left: 24px;
       }
-    }
-    &__top{
-      padding: 7px 0;
     }
     &__list {
       padding: 0 40px 12px;
@@ -77,17 +93,35 @@
       overflow-y: hidden;
       margin: 0 -40px 0;
     }
-    &__link{
+    &__link {
       display: none;
     }
-    &__bottom{
-      margin-top: 40px;
+    &__bottom {
+      margin-top: 46px;
     }
+
+
   }
   @media (min-width: $sizeDesktop) {
-    padding-top: 148px;
-    &__top{
+    padding-top: 152px;
+    &__top {
       padding: 0;
     }
+    &__tabs-nav {
+      font-size: 56px;
+      line-height: 56px;
+      padding-bottom: 6px;
+      margin-bottom: 52px;
+    }
+
+    &__bottom {
+      margin-top: 46px;
+    }
+    &__list {
+      padding: 0 96px;
+      margin: 0 -96px;
+    }
   }
+
+
 }

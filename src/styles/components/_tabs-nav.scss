@@ -1,24 +1,24 @@
 .tabs-nav {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
     display: block;
     height: 4px;
-    background-color: #828282;
     top: 100%;
     left: -7%;
     right: -7%;
   }
+
   &__list {
-    @media (max-width: 400px) {
-      white-space: nowrap;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      margin: 0 -20px;
-      padding: 0 20px;
-    }
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0 -20px;
+    padding: 0 20px;
   }
+
   &__item {
     cursor: pointer;
     color: #828282;
@@ -26,12 +26,15 @@
     white-space: normal;
     position: relative;
     padding: 0 12px 12px;
+
     &:first-child {
       padding-left: 0;
     }
+
     &:last-child {
       padding-right: 0;
     }
+
     &.is-active {
       &::after {
         position: absolute;
@@ -44,24 +47,70 @@
         z-index: 5;
       }
     }
+
     &--color {
       &-white.is-active {
         color: #fff;
+
         &::after {
           background-color: #bdbdbd;
         }
       }
+
       &-black.is-active {
         color: #121212;
+
         &::after {
           background-color: #828282;
         }
       }
     }
   }
-  @media (min-width: $sizeDesktop) {
+
+  @media (min-width: $sizeTablet) {
+    &__list {
+      margin: 0 -40px;
+      padding: 0 40px;
+
+    }
     &__item {
-      padding: 0 16px 12px;
+      &--color {
+        &-black {
+          padding: 0 16px 12px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+
+
+      }
+    }
+
+  }
+  @media (min-width: $sizeDesktop) {
+    &__list {
+      margin: 0 -96px;
+      padding: 0 96px;
+    }
+    &__item {
+      &--color {
+        &-white {
+          padding: 0 16px 12px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
     }
   }
 }

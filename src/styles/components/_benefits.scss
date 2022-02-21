@@ -2,34 +2,41 @@
   &__item {
     display: inline-block;
     vertical-align: top;
+
     img {
       width: 40px;
       height: 40px;
       display: block;
     }
+
     span {
       font-size: 14px;
       line-height: 20px;
     }
+
     &--hall-conference {
       img {
         margin-bottom: 12px;
       }
+
       span {
         color: rgba(255, 255, 255, 0.6);
       }
     }
+
     &--services {
       span {
         color: #828282;
       }
     }
   }
+
   &__title {
     font-family: GothamPro;
     font-weight: 500;
     margin-bottom: 4px;
   }
+
   @media (max-width: $sizeMaxMobile) {
     margin: 0 -20px;
     padding: 0 20px;
@@ -39,35 +46,45 @@
     &__item {
       white-space: normal;
       max-width: 240px;
+
       & + & {
         margin-left: 16px;
       }
     }
   }
-  @media (min-width: $sizeTablet) {
+  @media (max-width: $sizeMaxTablet) {
     &__item {
       &--hall-conference {
         max-width: 212px;
         margin-right: 24px;
         margin-bottom: 28px;
-        &:nth-child(3n+3){
+
+        &:nth-child(3n+3) {
           margin-right: 0;
         }
-        &:nth-last-child(-n+3){
+
+        &:nth-last-child(-n+3) {
           margin-bottom: 0;
         }
+
         img {
           margin-bottom: 11px;
         }
       }
-      &--services {
-        max-width: 328px;
-        margin-bottom: 24px;
-        &:nth-child(2n) {
-          margin-left: 32px;
-        }
-        &:nth-last-child(-n+2){
-          margin-bottom: 0;
+    }
+    @media (min-width: $sizeTablet) {
+      &__item {
+        &--services {
+          max-width: 328px;
+          margin-bottom: 24px;
+
+          &:nth-child(2n) {
+            margin-left: 32px;
+          }
+
+          &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -92,23 +109,34 @@
         max-width: 208px;
         margin-right: 24px;
         margin-bottom: 32px;
-        &:nth-last-child(-n+2){
+
+        &:nth-last-child(-n+2) {
           margin-bottom: 0;
         }
+
         img {
           margin-bottom: 12px;
         }
       }
+
       &--services {
         white-space: normal;
         max-width: 100%;
+
+        & + & {
+          margin-top: 24px;
+        }
+
         &:nth-child(2n) {
           margin-left: 0;
         }
+
         img {
           display: inline-block;
-          margin-right: 28px;
+          margin-right: 22px;
           vertical-align: middle;
+          width: 48px;
+          height: 48px;
         }
       }
     }

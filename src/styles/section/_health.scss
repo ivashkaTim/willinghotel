@@ -4,7 +4,7 @@
   &__photo {
     overflow: hidden;
     position: relative;
-    height: 67.5vw;
+    height: 70.5vw;
     @media (max-width: $sizeMaxMobile) {
       margin: 0 -20px 48px;
     }
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $sizeTablet) {
-    padding-top: 120px;
+    padding-top: 142px;
     &__photo {
       display: inline-block;
       height: 35.5vw;

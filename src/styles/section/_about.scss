@@ -1,14 +1,25 @@
 .about {
-  &__background-image {
-    display: none;
-    z-index: 1;
+  position: relative;
+
+  &__decoration {
+    @media (max-width: $sizeMaxMobile) {
+      display: none;
+    }
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
   }
+
   &__item {
     display: block;
+
     & + & {
       margin-top: 80px;
     }
   }
+
   &__text {
     @media (max-width: $sizeMaxMobile) {
       p {
@@ -17,6 +28,7 @@
       }
     }
   }
+
   &__photo {
     overflow: hidden;
     position: relative;
@@ -24,6 +36,7 @@
     @media (max-width: $sizeMaxMobile) {
       margin: 0 -20px 32px;
     }
+
     img {
       display: block;
       position: absolute;
@@ -37,15 +50,18 @@
       object-fit: cover;
     }
   }
+
   &__title {
     margin-bottom: 22px;
   }
+
   &__button {
     margin-top: 40px;
     @media (max-width: $sizeMaxMobile) {
       width: 100%;
     }
   }
+
   &__info {
     max-width: 650px;
   }
@@ -64,6 +80,7 @@
     }
     &__item {
       position: relative;
+
       & + & {
         margin-top: 120px;
       }
@@ -71,11 +88,13 @@
     &__photo {
       display: inline-block;
       vertical-align: middle;
+
       &--left {
         margin-left: -40px;
         height: 26.5vw;
         width: calc(50% + 46px);
       }
+
       &--right {
         width: 50%;
         height: 34.9vw;
@@ -88,10 +107,12 @@
     &__info {
       display: inline-block;
       vertical-align: middle;
+
       &--right {
         width: calc(50% - 6px);
         padding-left: 32px;
       }
+
       &--left {
         height: 34.9vw;
         width: 50%;
@@ -116,6 +137,7 @@
         width: calc(50% + 10px);
         max-height: 400px;
       }
+
       &--right {
         right: 0;
         height: 26.67vw;
@@ -128,6 +150,7 @@
         width: calc(50% - 10px);
         padding-left: 54px;
       }
+
       &--left {
         width: 50%;
         padding-right: 48px;
